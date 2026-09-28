@@ -1,0 +1,22 @@
+{
+  "name": "exemploaula06",
+  "version": "1.0.0",
+  "description": "Projeto de exemplos sobre herança em TypeScript",
+  "main": "index.js",
+   "scripts": {
+    "build": "tsc",
+    "dev:01": "ts-node src/01-heranca-basica.ts",
+    "dev:02": "ts-node src/02-modificadores-heranca.ts",
+    "dev:03": "ts-node src/03-sobrescrita.ts",
+    "dev:04": "ts-node src/04-pessoa-aluno-professor.ts",
+    "dev:05": "ts-node src/05-veiculo-carro.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
