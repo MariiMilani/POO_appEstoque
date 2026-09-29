@@ -7,6 +7,7 @@ import { DashboardHome } from './pages/DashboardHome'
 import { CategoriasPage } from './pages/CategoriasPage'
 import { ProdutosPage } from './pages/ProdutosPage'
 import { ProtectedRoute } from './routes/ProtectedRoute'
+import {MovimentacoesPage} from "./pages/MovimentacoesPage.tsx";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
               <Route index element={<DashboardHome />} />
               <Route path="categorias" element={<CategoriasPage />} />
               <Route path="produtos" element={<ProdutosPage />} />
+              <Route path="movimentacoes" element={<MovimentacoesPage />} />
             </Route>
           </Route>
 
