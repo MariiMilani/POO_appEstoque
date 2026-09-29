@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { FormularioCategoria } from '../components/FormularioCategoria';
 import type {Produto} from "../types";
 import {ListaProdutos} from "../components/ListaProdutos.tsx";
 import {produtoApi} from "../api/api.ts";
+import {FormularioProduto} from "../components/FormularioProduto.tsx";
 
 export function ProdutosPage() {
     const [produtos, setProdutos] = useState<Produto[]>([]);
@@ -20,7 +20,7 @@ export function ProdutosPage() {
             <h2>Categorias</h2>
             <ListaProdutos produtos={produtos} />
             <hr />
-            <FormularioCategoria onCategoriaCriada={carregar} />
+            <FormularioProduto onProdutoCriado={carregar} />
         </div>
     );
 }

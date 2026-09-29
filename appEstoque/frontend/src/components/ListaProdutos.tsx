@@ -13,6 +13,7 @@ export function ListaProdutos({ produtos }: Props) {
                 <th>Nome</th>
                 <th>Preço</th>
                 <th>Quantidade</th>
+                <th>Categoria</th>
             </tr>
             </thead>
             <tbody>
@@ -22,6 +23,7 @@ export function ListaProdutos({ produtos }: Props) {
                     <td>{produto.nome}</td>
                     <td>{produto.preco}</td>
                     <td>{produto.quantidade}</td>
+                    <td>{produto.categoria.nome}</td>
                 </tr>
             ))}
             </tbody>
