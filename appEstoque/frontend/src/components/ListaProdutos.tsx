@@ -5,6 +5,12 @@ interface Props {
 }
 
 export function ListaProdutos({ produtos }: Props) {
+    if(produtos.length == 0){
+        return (
+            <h3>Não existem produtos cadastrados.</h3>
+        )
+    }
+
     return (
         <table border={1} cellPadding={8} style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
@@ -21,7 +27,7 @@ export function ListaProdutos({ produtos }: Props) {
                 <tr key={produto.id}>
                     <td>{produto.id}</td>
                     <td>{produto.nome}</td>
-                    <td>{produto.preco}</td>
+                    <td>{produto.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
                     <td>{produto.quantidade}</td>
                     <td>{produto.categoria.nome}</td>
                 </tr>

@@ -17,7 +17,7 @@ export function ProdutosPage() {
 
     return (
         <div>
-            <h2>Categorias</h2>
+            <h2>Produtos</h2>
             <ListaProdutos produtos={produtos} />
             <hr />
             <FormularioProduto onProdutoCriado={carregar} />
