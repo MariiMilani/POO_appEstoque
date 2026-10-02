@@ -1,32 +1,18 @@
-# React + TypeScript + Vite
+# Alterações realizadas no projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Tela Produtos
+Página no inicio:
+![img.png](img/inicio-produto.png)
 
-Currently, two official plugins are available:
+Com um produto adicionado:
+![img.png](img/adicionar-produto.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tela Movimentações
+Página no ínicio:
+![img.png](img/inicio-movimentacao.png)
 
-## React Compiler
+Adicionando uma movimentação:
+![img.png](img/adicionar-movimentacao.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Pós registrada a movimentação:
+![img.png](img/final-movimentacao.png)

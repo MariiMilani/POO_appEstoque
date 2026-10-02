@@ -26,7 +26,15 @@ export function FormularioMovimentacao({ onMovimentacaoCriada }: Props) {
         const quantidadeNum = Number(quantidade);
 
         if (!produto) {
-            setErro('Informe o nome da categoria');
+            setErro('Produto obrigatório');
+            return;
+        }
+
+        if(!quantidade){
+            setErro('Quantidade obrigatória');
+            return
+        } else if(quantidadeNum < 0 || !Number.isInteger(quantidadeNum)) {
+            setErro('Quantidade inteira maior ou igual a zero');
             return;
         }
 

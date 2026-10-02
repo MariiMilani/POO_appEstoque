@@ -28,7 +28,7 @@ export function ListaMovimentacoes({ movimentacoes }: Props) {
                     <td>{movimentacao.id}</td>
                     <td>{new Date(movimentacao.criadoEm).toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' })}</td>
                     <td>{movimentacao.produto.nome}</td>
-                    <td>{movimentacao.tipo}</td>
+                    <td style={{color: movimentacao.tipo === 'ENTRADA' ? 'green' : 'red' }}>{movimentacao.tipo}</td>
                     <td>{movimentacao.quantidade}</td>
                 </tr>
             ))}
